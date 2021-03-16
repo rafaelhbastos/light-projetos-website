@@ -40,7 +40,7 @@ body {
   align-items: center;
   flex-wrap:wrap;
   max-width: 1200px;
-  padding: 15px 0; 
+  padding: 5px 10px;
   margin: 0 auto;
 }
 
@@ -75,7 +75,7 @@ body {
 }
 
 .budget-box {
-  padding: 15px;
+  padding: 10px 0 10px 20px;
 }
 
 .budget{
@@ -95,3 +95,21 @@ body {
   background: white;
 }
 
+.bg-intro {
+  background-image: linear-gradient(#757575, black);
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 10px;
+  max-width: 1200px;
+}
+
+.intro h1 {
+  font-size: 46px;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
