@@ -21,3 +21,77 @@ img {
   display: block;
   max-width: 100%;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Almarai', sans-serif;
+}
+
+.menu-bg {
+  background: black;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap:wrap;
+  max-width: 1200px;
+  padding: 15px 0; 
+  margin: 0 auto;
+}
+
+.menu-logo a{
+  margin: 10px 10px;
+}
+
+.menu-nav{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.menu ul {
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.menu-nav ul li{
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+.menu-nav ul li a{
+  color: white;
+  padding: 10px 5px;
+  margin: 0 10px;
+}
+
+.menu-nav ul li a:hover{
+  color: #eaff00;
+}
+
+.budget-box {
+  padding: 15px;
+}
+
+.budget{
+  text-transform: uppercase;
+  margin: 0 10px;
+  padding: 15px 20px;
+  color: #757575;
+  background: #eaff00;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  border-radius: 4px;
+  max-width: 300px
+}
+
+.budget:hover{
+  color: black;
+  background: white;
+}
+
