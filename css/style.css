@@ -27,26 +27,24 @@ img {
 }
 
 body {
-  font-family: 'Almarai', sans-serif;
+  font-family: "Almarai", sans-serif;
 }
 
-
-.button{
+.button {
   text-transform: uppercase;
   margin: 60px auto 20px auto;
   padding: 15px 40px;
   color: #eaff00;
   border: 3px solid #eaff00;
   font-size: 20px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   border-radius: 4px;
 }
 
-.button:hover{
+.button:hover {
   color: white;
   border-color: white;
 }
-
 
 .menu-bg {
   background: black;
@@ -56,17 +54,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   max-width: 1200px;
-  padding: 5px 10px;
+  padding: 0 10px;
   margin: 0 auto;
 }
 
-.menu-logo a{
+.menu-logo a {
   margin: 10px 10px;
 }
 
-.menu-nav{
+.menu-nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -74,21 +72,21 @@ body {
 
 .menu ul {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 }
 
-.menu-nav ul li{
-  font-size: 16px;
-  font-family: 'Lato', sans-serif;
+.menu-nav ul li {
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
 }
 
-.menu-nav ul li a{
+.menu-nav ul li a {
   color: white;
   padding: 10px 5px;
   margin: 0 10px;
 }
 
-.menu-nav ul li a:hover{
+.menu-nav ul li a:hover {
   color: #eaff00;
 }
 
@@ -96,24 +94,24 @@ body {
   padding: 10px 0 10px 20px;
 }
 
-.budget{
+.budget {
   text-transform: uppercase;
   margin: 0 10px;
   padding: 15px 20px;
   color: #6d6d6d;
   background: #eaff00;
-  font-size: 16px;
-  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
   border-radius: 4px;
 }
 
-.budget:hover{
+.budget:hover {
   color: black;
   background: white;
 }
 
 .bg-intro {
-  background-image: linear-gradient(#757575, black);
+  background-image: linear-gradient(#303030, black);
 }
 
 .intro {
@@ -126,18 +124,18 @@ body {
 }
 
 .intro h1 {
-  font-size: 46px;
+  font-size: 40px;
   color: white;
   text-align: center;
   padding: 20px 0;
-  max-width: 900px;
+  max-width: 800px;
 }
 
 .bg-service {
   background: #292929;
 }
 
-.service{
+.service {
   max-width: 1200px;
   padding: 60px 10px;
   margin: 0 auto;
@@ -158,10 +156,10 @@ body {
   width: 250px;
   background: white;
   display: block;
-  margin: 20px auto;
+  margin: 15px auto;
 }
 
-.service ul{
+.service ul {
   margin: 80px 0 20px 0;
   display: flex;
   flex-wrap: wrap;
@@ -205,17 +203,19 @@ body {
 .bg-portfolio {
   background: black;
 }
-.portfolio{
+.portfolio {
   padding: 60px 10px;
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .portfolio p {
   color: white;
-  font-size: 26px;
+  font-size: 24px;
   text-align: center;
-  margin: 30px;
+  margin: 35px;
 }
 
 .portfolio-content {
@@ -225,15 +225,24 @@ body {
 }
 
 .portfolio-content span {
-  color: #68CFED;
-  font-size: 200px;
-} 
+  color: #68cfed;
+  font-size: 150px;
+  cursor: pointer;
+}
+
+.portfolio-content span:first-child {
+  padding-right: 30px;
+}
+
+.portfolio-content span:last-child {
+  padding-left: 30px;
+}
 
 .portfolio-product {
   background: white;
   max-width: 600px;
   border-radius: 10px;
-  margin: 60px 0;
+  margin: 60px 0 0 20px;
 }
 
 .portfolio-product img {
@@ -246,10 +255,85 @@ body {
 }
 
 .portfolio-product p {
-  color: #8F92A1;
+  color: #8f92a1;
   margin: 0px 20px 60px 20px;
   text-align: left;
   font-size: 18px;
 }
 
+.bg-request {
+  background: #408093;
+}
 
+.request {
+  padding: 60px 10px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.request form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 60px 0 0 0;
+}
+
+.client {
+  display: flex;
+  flex-direction: column;
+  margin: 7px 0;
+}
+
+.request label {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: left;
+}
+
+.request input {
+  border-radius: 4px;
+  border: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  height: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.request textarea {
+  border-radius: 4px;
+  height: 180px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  outline: none;
+  resize: none;
+}
+
+.client:first-child {
+  flex: 1 1 625px;
+  padding-right: 40px;
+}
+
+.client:nth-child(2) {
+  flex: 1 1 200px;
+}
+
+.client:nth-child(3),
+.client:nth-child(4) {
+  flex: 1 1 100%;
+}
+
+.request .button {
+  background: none;
+  cursor: pointer;
+  align-self: center;
+}
+
+.request .button:hover {
+  color: black;
+  border-color: black;
+}
