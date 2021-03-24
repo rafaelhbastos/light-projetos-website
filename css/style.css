@@ -243,8 +243,7 @@ body {
   background: white;
   max-width: 650px;
   border-radius: 10px;
-  margin: 60px 0 0 20px;
-  position: relative;
+  margin: 60px 0 0 0;
 }
 
 .portfolio-product img {
@@ -319,7 +318,7 @@ body {
 }
 
 .client:first-child {
-  flex: 1 1 625px;
+  flex: 1 1 650px;
   padding-right: 40px;
 }
 
@@ -349,7 +348,6 @@ body {
 
 .footer {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   max-width: 1200px;
@@ -376,10 +374,11 @@ body {
 
 .footer p:last-child {
   text-align: center;
+  width: 300px;
 }
 
 .footer .footer-logo {
-  flex: 1 1 1000px;
+  flex: 1 1 150px;
   margin: 20px 0;
 }
 
@@ -402,4 +401,91 @@ body {
 .footer .social-media a img:hover {
   background: #eaff00;
   border-color: #eaff00;
+}
+
+@media (min-width: 790px) and (max-width: 980px) {
+  .service ul li {
+    margin: 0 5px 0 5px;
+    max-width: 230px;
+  }
+  .service ul li h2 {
+    font-size: 20px;
+  }
+  .service-text {
+    padding: 15px 15px 30px 15px;
+    text-align: center;
+  }
+  .portfolio-product {
+    margin: 20px 0;
+    max-width: 450px;
+  }
+  .portfolio-product h2 {
+    margin: 10px 15px;
+  }
+  .portfolio-product p {
+    font-size: 16px;
+    margin: 0 15px 20px 15px;
+  }
+  .portfolio-content span {
+    font-size: 100px;
+  }
+  .client:first-child {
+    flex: 1 1 450px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 789px) {
+  .menu,
+  .menu-nav {
+    flex-direction: column;
+  }
+  .budget-box {
+    margin: 15px 0;
+  }
+  .menu-nav ul li {
+    margin: 15px 0px;
+  }
+  .menu-nav ul li a {
+    border: 2px solid white;
+    border-radius: 5px;
+  }
+  .menu-nav ul li a:hover {
+    border-color: #eaff00;
+  }
+  .intro h1 {
+    font-size: 30px;
+  }
+  .service ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .service ul li {
+    margin: 0 5px 10px 5px;
+  }
+  .service ul li h2 {
+    font-size: 20px;
+  }
+  .service-text {
+    padding: 15px 15px 30px 15px;
+    text-align: center;
+  }
+  .portfolio-product {
+    margin: 10px 0;
+    max-width: 300px;
+  }
+  .portfolio-product h2 {
+    margin: 5px 15px;
+  }
+  .portfolio-product p {
+    font-size: 14px;
+    margin: 0 15px 20px 15px;
+  }
+  .portfolio-content span {
+    font-size: 100px;
+  }
+  .client:first-child {
+    flex: 1 1 100%;
+    padding-right: 0px;
+  }
 }
